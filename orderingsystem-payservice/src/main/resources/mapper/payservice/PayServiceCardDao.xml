@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chris.orderingsystem.payservice.dao.PayServiceCardDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.chris.orderingsystem.payservice.entity.PayServiceCardEntity" id="payServiceCardMap">
+        <result property="id" column="id"/>
+        <result property="cardId" column="card_id"/>
+        <result property="cardPassword" column="card_password"/>
+        <result property="cardMoney" column="card_money"/>
+        <result property="deleted" column="deleted"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+    </resultMap>
+
+
+</mapper>
